@@ -4,11 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>bubb4clock</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
   </head>
   <body>
+    <audio id="audio" loop></audio>
+
     <div id="background">
-      <img src="background.png" />
+      <img src="assets/background.png" />
 
       <div id="left-clock" class="clock">
         <div class="clock-face">
@@ -27,8 +29,40 @@
           <div class="hand hand-second"></div>
         </div>
       </div>
+
+      <img id="moustache" src="assets/ametache.gif">
+
+      <a href="#" id="open-settings" class="settings-closed"><img id="logo" src="assets/logo.png" /></a>
+      <img id="logo-bg" class="settings-open" src="assets/logo-bg.png" />
+
+      <div id="settings" class="settings-open">
+        <p><a href="#" id="close-settings">Close settings</a></p>
+        <p>
+          <label for="audio-select">Background music</label>
+          <select name="audio" id="audio-select" autocomplete="off">
+            <option value="">Audio off</option>
+            <option value="13305">登る小さな幼生 by MAKOOTO</option>
+            <option value="13798">デートコース by いまたく</option>
+            <option value="12459">おもちゃのダンス by すもち</option>
+          </select>
+        </p>
+        <p>
+          <label for="time-zone-left">Left clock time zone</label>
+          <select name="time-zone-left" id="time-zone-left-select" autocomplete="off">
+          </select>
+        </p>
+        <p>
+          <label for="time-zone-right">Right clock time zone</label>
+          <select name="time-zone-right" id="time-zone-right-select" autocomplete="off">
+          </select>
+        </p>
+        <p>
+          Layout from <a href="https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg"rel="noopener noreferrer" target="_blank">Amelia Watson</a><br />
+          Music from <a href="https://dova-s.jp/" rel="noopener noreferrer" target="_blank">DOVA-SYNDROME</a><br />
+          Code from <a href="https://twitter.com/gerjomarty" rel="noopener noreferrer" target="_blank">gerjomarty</a>
+        </p>
+      </div>
     </div>
-    <script src="clocks.js"></script>
-    <script data-goatcounter="https://dpc.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script type="module" src="javascripts/application.js"></script>
   </body>
 </html>
