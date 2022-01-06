@@ -7,6 +7,7 @@
     <link href="stylesheets/style.css" rel="stylesheet">
   </head>
   <body>
+    <canvas id="confetti" data-on="true"></canvas>
     <audio id="audio" loop></audio>
 
     <div id="background">
@@ -36,11 +37,12 @@
       <img id="logo-bg" class="settings-open" src="assets/logo-bg.png" />
 
       <div id="settings" class="settings-open">
-        <p><a href="#" id="close-settings">Close settings</a></p>
+        <p><a href="#" id="close-settings">Close settings</a> - <a href="#" id="toggle-confetti" data-on="true">🎉</a></p>
         <p>
           <label for="audio-select">Background music</label>
           <select name="audio" id="audio-select" autocomplete="off">
             <option value="">Audio off</option>
+            <option value="2889">Happy birthday by GT-K</option>
             <option value="13305">登る小さな幼生 by MAKOOTO</option>
             <option value="13798">デートコース by いまたく</option>
             <option value="12459">おもちゃのダンス by すもち</option>
