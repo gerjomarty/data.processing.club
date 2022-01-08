@@ -3,11 +3,6 @@ export { enableAudio };
 function enableAudio(audioSelect, audioCanvas) {
   audioSelect.addEventListener("change", (e) => {
     switch(e.target.value) {
-      case "2889":
-        audioCanvas.src = "assets/Happy_birthday.mp3";
-        audioCanvas.load();
-        audioCanvas.play();
-        break;
       case "13305":
         audioCanvas.src = "assets/登る小さな幼生.mp3";
         audioCanvas.load();
